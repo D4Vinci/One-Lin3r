@@ -1,0 +1,12 @@
+#Written by: Karim shoair - D4Vinci ( One-Lin3r )
+#####
+# This file shows how an payload should be written to be used in One-Lin3r
+#####
+
+[Info]
+Author      = Here you put your name
+Description = A brief description of how the payload works without explaining a lot like what I did
+
+[Payload]
+Type     = The type of payload (Dropper for droppers - Reverser for reverse connectors - Any thing else will be considered as others)
+Payload  = The payload itself with replacing the (url/host) with {} to be replaced when printed to the user or not adding {} if it was simple liner that do something

