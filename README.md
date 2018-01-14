@@ -2,7 +2,7 @@
 
 One-Lin3r is simple and light-weight framework inspired by the web-delivery module in Metasploit.
 
-[![asciicast](https://asciinema.org/a/157020.png)](https://asciinema.org/a/157020)
+[![asciicast](https://asciinema.org/a/157020.png)](https://asciinema.org/a/157020?autoplay=1)
 
 It consists of various one-liners that aids in penetration testing operations:
 - **Reverser** - give it IP & port and it returns a reverse-shell liner ready to copy-&-paste.
