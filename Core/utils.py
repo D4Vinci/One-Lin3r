@@ -73,6 +73,7 @@ def check_ver(ver):
 		return res
 	#Will work on this function in future to make it update the database but not now
 
+"""
 def slow_print(text):
 	for s in text:
 		if sys.version_info[0]==2:
@@ -80,6 +81,7 @@ def slow_print(text):
 		else:
 			print(s, end='')
 	time.sleep(0.1)
+"""
 
 class MyCompleter(object):
 	def __init__(self, options):
