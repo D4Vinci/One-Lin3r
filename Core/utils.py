@@ -1,18 +1,17 @@
 #Written by: Karim shoair - D4Vinci ( One-Lin3r )
 import sys,os,time
 from terminaltables import SingleTable as table
-if sys.version_info[0]==3:
+try:
 	from urllib.request import urlopen
-elif sys.version_info[0]==2:
+except ImportError:
 	from urllib import urlopen
 
 def getinput():
 	# Return the suitable input type according to python version
-	ver = sys.version[0]
-	if ver=="3":
-		return input
-	else:
+	try:
 		return raw_input
+	except NameError:
+		return input
 
 def create_table(headers,rows,name="Payloads"):
 	# Prints a table with the given parameters
