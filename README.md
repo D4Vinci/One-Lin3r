@@ -1,30 +1,34 @@
-# One-Lin3r [![Python 3.5](https://img.shields.io/badge/Python-3.5-yellow.svg)](http://www.python.org/download/) [![Python 2.7](https://img.shields.io/badge/Python-2.7-yellow.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-1.0-red.svg) ![Database](https://img.shields.io/badge/Database-0.1-red.svg)
+# One-Lin3r [![Python 3.5](https://img.shields.io/badge/Python-3.5-yellow.svg)](http://www.python.org/download/) [![Python 2.7](https://img.shields.io/badge/Python-2.7-yellow.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-1.0-red.svg) ![Database](https://img.shields.io/badge/Database-0.2-red.svg)
 
 One-Lin3r is simple and light-weight framework inspired by the web-delivery module in Metasploit.
 
-[![asciicast](https://asciinema.org/a/157020.png)](https://asciinema.org/a/157020?autoplay=1)
+[![asciicast](https://asciinema.org/a/157020.png)](https://asciinema.org/a/157020)
 
 It consists of various one-liners that aids in penetration testing operations:
-* Reverser: Give it IP & port and it returns a reverse shell liner ready for copy & paste.
-* Dropper: Give it an uploaded-backdoor URL and it returns a download-&-execute liner ready for copy & paste.
-* Other: Holds liners with general purpose to help in penetration testing (ex: Mimikatz, Powerup, etc...) on the trending OSes (Windows, Linux, and macOS) "More OSes can be added too".
+- **Reverser** - give it IP & port and it returns a reverse-shell liner ready to copy-&-paste.
+- **Dropper**  - give it an uploaded-backdoor URL and it returns a download-&-execute liner ready to copy-&-paste.
+- **Other**    - holds liners with the general purpose to help you in penetration testing (ex:Mimikatz, Powerup..).
+And all of that on the three platforms (Windows, Linux, and MacOS) and any other platform can be added.
 
 ## Features
-- Search for any one-liner in the database by its full name or partially.
-- You can add your own liners by [following these steps](https://github.com/D4Vinci/One-Lin3r/wiki) to create a ".liner" file.Also you can send it to me directly and it will be added in the framework and credited with your name :smile:.
-- Autocomplete any framework command and recommendations in case of typos (in case you love hacking like movies :laughing:).
-- Command line arguments can be used to give the framework a resource file to load and execute for automation.
+- Search for any one-liner in the database by anything in its name.
+- You can add your own liners by [following this steps](https://github.com/D4Vinci/One-Lin3r/wiki) to create a ".liner" file and if you sent it to me will be added in the framework with your name :smile:.
+- Autocomplete any framework command and recommendations in case of typos.
+- Command line arguments you can use to give the framework a resource file to execute and more.
 - The ability to reload the database if you added any liner without restarting the framework.
-- You can add any platform to the payloads database just by making a folder in payloads folder and creating a ".liner" file there.
+- You can add any platform to payloads database just by making a folder in payloads folder and creating a ".liner" file there.
 - More...
 
-The payloads database is not that big in the meantime because this the first edition but it will get bigger with updates and contributions.
+The payloads database is not big now because this the first edition but it will get bigger with updates and contributions.
 
 # Screenshots
-<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner1.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner2.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner3.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner4.png" width="50%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/resources/oneliner1.png" width="100%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/resources/oneliner2.png" width="80%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/resources/oneliner3.png" width="600%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/resources/oneliner4.png" width="40%"></img>
 
 
-# Usage
+#Usage
 ## Commandline arguments
 ```
 usage: One-Lin3r.py [-h] [-r R] [-x X] [-q]

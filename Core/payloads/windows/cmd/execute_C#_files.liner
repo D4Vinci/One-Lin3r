@@ -1,0 +1,7 @@
+[Info]
+Author      = Karim shoair (D4Vinci)
+Description = Using the .NET compiler to compile a c# payload locally that can then be executed.
+
+[Payload]
+Type     = Execute
+Payload  = C:\Windows\Microsoft.NET\Framework\v2.0.50727\csc.exe /out:payload.exe {your_cs_file_here}

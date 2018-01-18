@@ -1,0 +1,7 @@
+[Info]
+Author      = Karim shoair (D4Vinci)
+Description = Uses forfiles to execute commands without using cmd.
+
+[Payload]
+Type     = Execute
+Payload  = forfiles /p c:\windows\system32 /m notepad.exe /c {Here_your_command}
