@@ -68,15 +68,15 @@ exit/quit           Exit the framework
 ```
 cd One-Lin3r-master
 python -m pip install -r win_requirements.txt
-python One-Lin3r.py -h
+python One_Lin3r.py -h
 ```
 **+For Linux :**
 ```
 git clone https://github.com/D4Vinci/One-Lin3r.git
 chmod 777 -R One-Lin3r
 cd One-Lin3r
-pip install -r requirements.txt
-python One-Lin3r.py -h
+pip3 install -r requirements.txt
+python3 One_Lin3r.py -h
 ```
 
 ## Contact
