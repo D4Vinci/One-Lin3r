@@ -22,13 +22,14 @@ And all of that on the three platforms (Windows, Linux, and MacOS) and any other
 The payloads database is not big now because this the first edition but it will get bigger with updates and contributions.
 
 # Screenshots
-<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/resources/oneliner1.png" width="100%"></img>
-<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/resources/oneliner2.png" width="80%"></img>
-<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/resources/oneliner3.png" width="600%"></img>
-<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/resources/oneliner4.png" width="40%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner1.png" width="100%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner2.png" width="80%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner3.png" width="600%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner4.png" width="40%"></img>
 
 
-#Usage
+# Usage
+
 ## Commandline arguments
 ```
 usage: One-Lin3r.py [-h] [-r R] [-x X] [-q]
