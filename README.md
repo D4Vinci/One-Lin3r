@@ -1,4 +1,4 @@
-# One-Lin3r [![Python 3.5](https://img.shields.io/badge/Python-3.5-yellow.svg)](http://www.python.org/download/) [![Python 2.7](https://img.shields.io/badge/Python-2.7-yellow.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-1.0-red.svg) ![Database](https://img.shields.io/badge/Database-0.2-red.svg)
+# One-Lin3r [![Python 3.5](https://img.shields.io/badge/Python-3.5-yellow.svg)](http://www.python.org/download/) [![Python 2.7](https://img.shields.io/badge/Python-2.7-yellow.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-1.0-red.svg) ![Database](https://img.shields.io/badge/Database-0.3-red.svg)
 
 One-Lin3r is simple and light-weight framework inspired by the web-delivery module in Metasploit.
 
