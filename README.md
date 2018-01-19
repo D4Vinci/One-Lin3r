@@ -21,10 +21,8 @@ It consists of various one-liners that aids in penetration testing operations:
 The payloads database is not big now because this the first edition but it will get bigger with updates and contributions.
 
 # Screenshots
-<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner1.png" width="50%"></img>
-<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner2.png" width="50%"></img>
-<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner3.png" width="50%"></img>
-<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner4.png" width="50%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner1.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner2.png" width="50%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner3.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner4.png" width="50%"></img>
 
 
 # Usage
