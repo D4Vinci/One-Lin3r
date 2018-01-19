@@ -5,9 +5,9 @@ One-Lin3r is simple and light-weight framework inspired by the web-delivery modu
 [![asciicast](https://asciinema.org/a/157020.png)](https://asciinema.org/a/157020?autoplay=1)
 
 It consists of various one-liners that aids in penetration testing operations:
-- *Reverser*: Give it IP & port and it returns a reverse shell liner ready for copy & paste.
-- *Dropper*: Give it an uploaded-backdoor URL and it returns a download-&-execute liner ready for copy & paste.
-- *Other*: Holds liners with general purpose to help in penetration testing (ex: Mimikatz, Powerup, etc...) on the trending OSes (Windows, Linux, and macOS) "More OSes can be added too".
+- **Reverser**: Give it IP & port and it returns a reverse shell liner ready for copy & paste.
+- **Dropper**: Give it an uploaded-backdoor URL and it returns a download-&-execute liner ready for copy & paste.
+- **Other**: Holds liners with general purpose to help in penetration testing (ex: Mimikatz, Powerup, etc...) on the trending OSes (Windows, Linux, and macOS) "More OSes can be added too".
 
 ## Features
 - Search for any one-liner in the database by its full name or partially.
@@ -89,6 +89,7 @@ bitcoin address: 1f4KfYikfqHQzEAsAGxjq46GdrBKc8jrG
 
 ## Disclaimer
 One-Lin3r is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.
+
 Copying a code from this tool or using it in another tool is accepted as you mention where you get it from :smile:.
 
 > Pull requests are always welcomed :D
