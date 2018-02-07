@@ -269,6 +269,6 @@ def banner():
 	banner_to_print  = R
 	banner_to_print += banner.format(Name=G+"One-Lin3r By "+Bold+"D4Vinci -"+M+" V"+v+end+R,
 									  Description=B+"The one line you always searched for :)"+R,
-									   Loaded=G+"Loaded "+Y+str(len(payloads))+G+" payload."+R)
+									   Loaded=G+"Loaded "+Y+str(len(payloads))+G+" payloads."+R)
 	print(banner_to_print+end)
 	return

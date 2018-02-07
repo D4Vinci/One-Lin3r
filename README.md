@@ -1,24 +1,24 @@
 # One-Lin3r [![n0where best cybersecurity tools](https://img.shields.io/badge/6-This%20year%20top%20100%20tools-red.svg)](https://n0where.net/best-cybersecurity-tools) [![Python 3.5](https://img.shields.io/badge/Python-3.5-yellow.svg)](http://www.python.org/download/) [![Python 2.7](https://img.shields.io/badge/Python-2.7-yellow.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-1.0-red.svg) ![Database](https://img.shields.io/badge/Database-0.4-red.svg)
 
-One-Lin3r is simple and light-weight framework inspired by the web-delivery module in Metasploit.
+One-Lin3r is a simple and lightweight framework inspired by the web delivery module in Metasploit.
 
 [![asciicast](https://asciinema.org/a/157020.png)](https://asciinema.org/a/157020?autoplay=1)
 
-It consists of various one-liners that aids in penetration testing operations:
-- **Reverser**: Give it IP & port and it returns a reverse shell liner ready for copy & paste.
+It consists of various one-liners that aid in penetration testing operations:
+- **Reverser**: Give it an IP & port and it returns a reverse shell liner ready for copy & paste.
 - **Dropper**: Give it an uploaded-backdoor URL and it returns a download-&-execute liner ready for copy & paste.
-- **Other**: Holds liners with general purpose to help in penetration testing (ex: Mimikatz, Powerup, etc...) on the trending OSes (Windows, Linux, and macOS) "More OSes can be added too".
+- **Other**: Holds liners with general purpose to help in penetration testing (ex: Mimikatz, Powerup, etc...) on the trending OS's (Windows, Linux, and macOS) "More OS's can be added too".
 
 ## Features
-- Search for any one-liner in the database by its full name or partially.
-- You can add your own liners by [following these steps](https://github.com/D4Vinci/One-Lin3r/wiki) to create a ".liner" file.Also you can send it to me directly and it will be added in the framework and credited with your name :smile:.
+- Search for any one-liner in the database by its full or partial name.
+- You can add your own liners by [following these steps](https://github.com/D4Vinci/One-Lin3r/wiki) to create a ".liner" file. Also you can send it to me directly and it will be added in the framework and credited with your name :smile:.
 - Autocomplete any framework command and recommendations in case of typos (in case you love hacking like movies :laughing:).
 - Command line arguments can be used to give the framework a resource file to load and execute for automation.
 - The ability to reload the database if you added any liner without restarting the framework.
-- You can add any platform to the payloads database just by making a folder in payloads folder and creating a ".liner" file there.
+- You can add any platform to the payloads database just by making a folder in the payloads folder and creating a ".liner" file there.
 - More...
 
-The payloads database is not big now because this the first edition but it will get bigger with updates and contributions.
+The payloads database is not big now because this the first edition, but it will get bigger with updates and contributions.
 
 # Screenshots
 <img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner1.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/resources/oneliner2.png" width="50%"></img>
@@ -90,6 +90,6 @@ bitcoin address: 1f4KfYikfqHQzEAsAGxjq46GdrBKc8jrG
 ## Disclaimer
 One-Lin3r is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.
 
-Copying a code from this tool or using it in another tool is accepted as you mention where you get it from :smile:.
+Copying code from this tool or using it in another tool is acceptable as long as you mention where you got it from :smile:.
 
 > Pull requests are always welcomed :D
