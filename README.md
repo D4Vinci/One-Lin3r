@@ -77,6 +77,15 @@ pip install -r requirements.txt
 python One-Lin3r.py -h
 ```
 
+**+For MAC :**
+```
+git clone https://github.com/D4Vinci/One-Lin3r.git
+chmod -R 777 One-Lin3r
+cd One-Lin3r
+pip install -r requirements.txt
+One_Lin3r.py -h
+```
+
 ## Contact
 - [Twitter](https://twitter.com/D4Vinci1)
 
