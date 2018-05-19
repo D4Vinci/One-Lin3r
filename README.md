@@ -73,6 +73,7 @@ python One-Lin3r.py -h
 git clone https://github.com/D4Vinci/One-Lin3r.git
 chmod 777 -R One-Lin3r
 cd One-Lin3r
+apt-get install libncurses5-dev
 pip install -r requirements.txt
 python One-Lin3r.py -h
 ```
