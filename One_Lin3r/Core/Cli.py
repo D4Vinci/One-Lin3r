@@ -9,10 +9,10 @@ if os.name!="nt":
 else:
     import pyreadline
 
-global payloads,all_keywords,name
 payloads = db.index_payloads()
 all_keywords = ["banner","refresh","reload","search","list","show","use","info","history","save_history","exit","quit","?","help","check"]
 name = W+underline+"OneLiner"+end
+
 
 def start(rc=False):
 	myinput = utils.getinput()
@@ -109,7 +109,7 @@ def command_search(text=False):
 		error("You must enter a keyword to search !")
 		return
 	cols = [B+Bold+"Name"+end,B+Bold+"Payload type"+end,B+Bold+"Description"+end]
-	pth = os.path.join("Core","payloads","")
+	pth = utils.get_corefilepath("payloads","")
 	Columns = []
 	Do  = 0;Loaded = 0;
 	for p in payloads:
@@ -130,7 +130,7 @@ def command_search(text=False):
 
 def command_list(text=False):
 	cols = [G+Bold+"Name"+end,G+Bold+"Payload type"+end,G+Bold+"Description"+end]
-	pth = os.path.join("Core","payloads","")
+	pth = utils.get_corefilepath("payloads","")
 	Columns = []
 	for p in payloads:
 		data = db.grab(p)
@@ -151,10 +151,10 @@ def command_use(p=False):
 		error("You must enter a payload to use !")
 		return
 	p   = p.lower()
-	if os.path.join("Core","payloads",p)+".liner" in payloads:
+	if utils.get_corefilepath("payloads",p)+".liner" in payloads:
 		myinput = utils.getinput()
 		old_p = p
-		p = os.path.join("Core","payloads",p)+".liner"
+		p = utils.get_corefilepath("payloads",p)+".liner"
 		Author = db.grab(p)["Author"]
 		data = db.grab(p,"shit")
 		p = p.split(os.sep)[-1].replace(".liner","")
@@ -198,7 +198,7 @@ def command_use(p=False):
 
 def command_list(text=False):
 	cols = [G+Bold+"Name"+end,G+Bold+"Payload type"+end,G+Bold+"Description"+end]
-	pth = os.path.join("Core","payloads","")
+	pth = utils.get_corefilepath("payloads","")
 	Columns = []
 	for p in payloads:
 		data = db.grab(p)
@@ -219,9 +219,9 @@ def command_info(p=False):
 		error("You must enter a payload to get it's information !")
 		return
 	p   = p.lower()
-	if os.path.join("Core","payloads",p)+".liner" in payloads:
+	if utils.get_corefilepath("payloads",p)+".liner" in payloads:
 		old_p = p
-		p = os.path.join("Core","payloads",p)+".liner"
+		p = utils.get_corefilepath("payloads",p)+".liner"
 		print( C+"[+] "+B+"Payload added by "+G+"=> "+M+db.grab(p)["Author"]+end )
 		print( C+"[+] "+B+"Payload type "+G+"=> "+M+db.grab(p)["Payload type"]+end )
 		print( C+"[+] "+B+"Description "+G+"=> "+M+db.grab(p)["Description"]+end )
@@ -239,8 +239,8 @@ def command_refresh(text=False):
 
 def command_check(text=False):
 	status("Checking...")
-	v1 = open(os.path.join("Core","resources","version.txt")).read().strip()
-	v2 = open(os.path.join("Core","payloads","version.txt")).read().strip()
+	v1 = open(utils.get_corefilepath("resources","version.txt")).read().strip()
+	v2 = open(utils.get_corefilepath("payloads","version.txt")).read().strip()
 	status("Core version "+Y+v1+G+" Database version "+Y+v2)
 	lol = utils.check_ver
 	if lol(0)==2 or lol(1)==2:
@@ -264,8 +264,8 @@ def banner():
 		os.system("cls")
 	else:
 		os.system("clear")
-	banner  = open(os.path.join("Core","resources","banner.txt")).read()
-	v = open(os.path.join("Core","resources","version.txt")).read().strip()
+	banner  = open(utils.get_corefilepath("resources","banner.txt")).read()
+	v = open(utils.get_corefilepath("resources","version.txt")).read().strip()
 	banner_to_print  = R
 	banner_to_print += banner.format(Name=G+"One-Lin3r By "+Bold+"D4Vinci -"+M+" V"+v+end+R,
 									  Description=B+"The one line you always searched for :)"+R,

@@ -1,10 +1,11 @@
 #Written by: Karim shoair - D4Vinci ( One-Lin3r )
 import os
+from . import utils
 
 def index_payloads():
     # Return list of all payloads
     payloads = []
-    pth      = os.path.join("Core","payloads")
+    pth      = utils.get_corefilepath("payloads")
     for path,_, files in os.walk( pth ):
         for name in [f for f in files if f.endswith(".liner")]:
             payloads.append( os.path.join(path, name) )

@@ -1,4 +1,0 @@
-terminaltables
-win_unicode_console
-colorama
-pyreadline
