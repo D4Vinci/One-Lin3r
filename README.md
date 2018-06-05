@@ -22,7 +22,7 @@ The payloads database is not big now because this the first edition but it will 
 
 # Screenshots
 <img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner1.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner2.png" width="50%"></img>
-<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner3.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/Core/One_Lin3r/resources/oneliner4.png" width="50%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner3.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner4.png" width="50%"></img>
 
 
 # Usage
