@@ -1,4 +1,4 @@
-# One-Lin3r [![n0where best cybersecurity tools](https://img.shields.io/badge/6-This%20year%20top%20100%20tools-red.svg)](https://n0where.net/best-free-open-source-cybersecurity-tools) [![Python 3.5](https://img.shields.io/badge/Python-3.5-yellow.svg)](http://www.python.org/download/) [![Python 2.7](https://img.shields.io/badge/Python-2.7-yellow.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-1.0-red.svg) ![Database](https://img.shields.io/badge/Database-0.4-red.svg)
+# One-Lin3r [![n0where best cybersecurity tools](https://img.shields.io/badge/6-This%20year%20top%20100%20tools-red.svg)](https://n0where.net/best-free-open-source-cybersecurity-tools) [![Python 3.5](https://img.shields.io/badge/Python-3.5-yellow.svg)](http://www.python.org/download/) [![Python 2.7](https://img.shields.io/badge/Python-2.7-yellow.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-1.1-red.svg) ![Database](https://img.shields.io/badge/Database-0.4-red.svg)
 
 One-Lin3r is simple and light-weight framework inspired by the web-delivery module in Metasploit.
 
@@ -20,7 +20,7 @@ It consists of various one-liners that aids in penetration testing operations:
 
 The payloads database is not big now because this the first edition but it will get bigger with updates and contributions.
 
-# Screenshots
+# Screenshots (Not updated)
 <img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner1.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner2.png" width="50%"></img>
 <img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner3.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner4.png" width="50%"></img>
 
@@ -29,7 +29,7 @@ The payloads database is not big now because this the first edition but it will 
 
 ## Commandline arguments
 ```
-usage: One-Lin3r.py [-h] [-r R] [-x X] [-q]
+usage: one-lin3r [-h] [-r R] [-x X] [-q]
 
 optional arguments:
   -h, --help  show this help message and exit
@@ -75,6 +75,14 @@ apt-get install libncurses5-dev
 pip install ./One-Lin3r
 one-lin3r -h
 ```
+
+## Updating the framework or the database
+- On Linux while outside the directory
+```
+cd One-Lin3r && git pull && cd ..
+pip install ./One-Lin3r --upgrade
+```
+- On Windows if you don't have git installed, redownload the framework zipped! 
 
 ## Contact
 - [Twitter](https://twitter.com/D4Vinci1)
