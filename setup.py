@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(name='One-Lin3r',
     version='0.1',
-    description='One-Lin3r is simple and light-weight framework inspired by the web-delivery module in Metasploit.',
+    description='One-Lin3r is simple and light-weight framework gives you one-liners that aids in pentesting operations',
     author='Karim Shoair',
     url='https://github.com/D4Vinci/One-Lin3r',
     packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
