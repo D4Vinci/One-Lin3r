@@ -65,7 +65,6 @@ exit/quit           Exit the framework
 
 **+For windows : (After downloading ZIP and upzip it)**
 ```
-cd One-Lin3r-master
 python -m pip install ./One-Lin3r-master
 one-lin3r -h
 ```
