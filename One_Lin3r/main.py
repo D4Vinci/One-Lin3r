@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #Written by: Karim shoair - D4Vinci ( One-Lin3r )
-from Core import Cli
-from Core.color import *
+from .Core import Cli
+from .Core.color import *
 import argparse
 
 parser = argparse.ArgumentParser(prog='One-Lin3r.py')
@@ -30,6 +30,3 @@ def main():
         Cli.start()
     #You think it's simple when you look here huh :"D
     sys.exit()
-
-if __name__ == '__main__':
-    main()

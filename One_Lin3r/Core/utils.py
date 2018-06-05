@@ -1,10 +1,16 @@
 #Written by: Karim shoair - D4Vinci ( One-Lin3r )
 import sys,os,time
 from terminaltables import SingleTable as table
+import pkg_resources
 if sys.version_info[0]==3:
 	from urllib.request import urlopen
 elif sys.version_info[0]==2:
 	from urllib import urlopen
+
+core_dir = pkg_resources.resource_filename('One_Lin3r', 'Core')
+
+def get_corefilepath(*args):
+    return os.path.join(core_dir, *args)
 
 def getinput():
 	# Return the suitable input type according to python version
@@ -58,10 +64,10 @@ def check_ver(ver):
 	#check for database version online
 	u = "https://raw.githubusercontent.com/D4Vinci/One-Lin3r/master/Core/"
 	if ver==0:
-		v = open(os.path.join("Core","resources","version.txt")).read().strip()
+		v = open(get_corefilepath("resources","version.txt")).read().strip()
 		u = u + 'resources/version.txt'
 	else:
-		v = open(os.path.join("Core","payloads","version.txt")).read().strip()
+		v = open(get_corefilepath("payloads","version.txt")).read().strip()
 		u = u + 'payloads/version.txt'
 	try:
 		res = urlopen(u).read().decode('utf-8').strip()

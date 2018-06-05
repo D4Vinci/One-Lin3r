@@ -58,24 +58,23 @@ exit/quit           Exit the framework
 ## Installing and requirements
 ### To make the tool work at its best you must have :
 - Python 3.x or 2.x (preferred 3).
-- Linux (Tested on kali rolling) or Windows system (Not tested yet on MacOS but it should work).
+- Linux (Tested on kali rolling), Windows system, mac osx (tested on 10.11)
 - The requirements mentioned in the next few lines.
 
 ### Installing
+
 **+For windows : (After downloading ZIP and upzip it)**
 ```
 cd One-Lin3r-master
-python -m pip install -r win_requirements.txt
-python One-Lin3r.py -h
+python -m pip install ./One-Lin3r-master
+one-lin3r -h
 ```
 **+For Linux :**
 ```
 git clone https://github.com/D4Vinci/One-Lin3r.git
-chmod 777 -R One-Lin3r
-cd One-Lin3r
 apt-get install libncurses5-dev
-pip install -r requirements.txt
-python One-Lin3r.py -h
+pip install ./One-Lin3r
+one-lin3r -h
 ```
 
 ## Contact
