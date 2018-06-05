@@ -62,7 +62,7 @@ def encoder(text):
 
 def check_ver(ver):
 	#check for database version online
-	u = "https://raw.githubusercontent.com/D4Vinci/One-Lin3r/master/Core/"
+	u = "https://raw.githubusercontent.com/D4Vinci/One-Lin3r/master/One_Lin3r/Core"
 	if ver==0:
 		v = open(get_corefilepath("resources","version.txt")).read().strip()
 		u = u + 'resources/version.txt'
