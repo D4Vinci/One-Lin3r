@@ -88,11 +88,9 @@ pip install ./One-Lin3r --upgrade
 - [Twitter](https://twitter.com/D4Vinci1)
 
 ## Donation
-If you liked my work and want to support me, you can give me a cup of coffee :)
+If this tool has been useful for you, feel free to thank me by buying me a coffee :)
 
-<img src="https://github.com/D4Vinci/Dr0p1t-Framework/blob/master/donate.png"></img>
-
-bitcoin address: 1f4KfYikfqHQzEAsAGxjq46GdrBKc8jrG
+[![Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/d4vinci)
 
 ## Disclaimer
 One-Lin3r is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.
