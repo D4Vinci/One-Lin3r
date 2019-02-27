@@ -65,10 +65,10 @@ def check_ver(ver):
 	u = "https://raw.githubusercontent.com/D4Vinci/One-Lin3r/master/One_Lin3r/Core"
 	if ver==0:
 		v = open(get_corefilepath("resources","version.txt")).read().strip()
-		u = u + 'resources/version.txt'
+		u += 'resources/version.txt'
 	else:
 		v = open(get_corefilepath("payloads","version.txt")).read().strip()
-		u = u + 'payloads/version.txt'
+		u += 'payloads/version.txt'
 	try:
 		res = urlopen(u).read().decode('utf-8').strip()
 	except:
