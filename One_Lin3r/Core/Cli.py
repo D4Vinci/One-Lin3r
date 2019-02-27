@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #Written by: Karim shoair - D4Vinci ( One-Lin3r )
 import os,sys,time
+from datetime import date
 from terminaltables import SingleTable as table
 from . import utils,db
 from .color import *
@@ -58,11 +59,11 @@ def start(rc=False):
 						n -= 1
 
 				if c_head=="save_history":
-					f = open("lin3r_history.txt","w")
+					f = open("lin3r_history({}).txt".format(date.today()),"w")
 					for line in history:
 						f.write(line+"\n")
 					f.close()
-					status( "Command history saved to lin3r_history.txt" )
+					status( "Command history saved to lin3r_history({}).txt".format(date.today()))
 
 				if c_head in ["help","?"]:
 					print(help_msg)
