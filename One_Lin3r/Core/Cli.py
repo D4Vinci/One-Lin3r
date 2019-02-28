@@ -11,7 +11,7 @@ else:
     import pyreadline
 
 payloads = db.index_payloads()
-all_keywords = ["banner","refresh","reload","search","list","show","use","info","history","save_history","exit","quit","?","help","check"]
+all_keywords = ["banner","refresh","reload","search","list","show","use","info","history","save_history","exit","quit","?","help","check","clear","cls"]
 name = W+underline+"OneLiner"+end
 
 
@@ -31,7 +31,8 @@ def start(rc=False):
 	check               Prints the core version and database version then check for them online.
 	history             Display command line most important history from the beginning
 	save_history        Save command line history to a file
-	exit/quit           Exit the framework"""
+	exit/quit           Exit the framework
+	clear/cls	    Clear the screen"""
 	#back             	Move back from the current context (No we are not in Metasploit :"D )
 	if os.name!="nt":
 		utils.Input_completer(all_keywords)
@@ -48,7 +49,7 @@ def start(rc=False):
 			if c_head in ["refresh","reload","search","list","show","use","info","exit"]:
 				history.append(c)
 
-			if c_head in ["banner","history","save_history","quit","exit","?","help"]:
+			if c_head in ["banner","history","save_history","quit","exit","?","help","clear","cls"]:
 				if c_head=="banner":
 					banner()
 
@@ -70,6 +71,8 @@ def start(rc=False):
 
 				if c_head in ["exit","quit"]:
 					goodbye()
+				if c_head in ["clear","cls"]:
+					os.system("clear")
 			else:
 				command_handler(c)
 		except KeyboardInterrupt:
