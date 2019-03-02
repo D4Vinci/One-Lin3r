@@ -1,10 +1,13 @@
 #Written by: Karim shoair - D4Vinci ( One-Lin3r )
+from __future__ import print_function
+
 import sys,os,time
 from terminaltables import SingleTable as table
 import pkg_resources
-if sys.version_info[0]==3:
+
+try:
 	from urllib.request import urlopen
-elif sys.version_info[0]==2:
+except ImportError:
 	from urllib import urlopen
 
 core_dir = pkg_resources.resource_filename('One_Lin3r', 'Core')
@@ -13,20 +16,19 @@ def get_corefilepath(*args):
     return os.path.join(core_dir, *args)
 
 def getinput():
-	# Return the suitable input type according to python version
-	ver = sys.version[0]
-	if ver=="3":
-		return input
-	else:
+	# Return the suitable input type according to Python version
+	try:
 		return raw_input
+	except NameError:
+		return input
 
 def create_table(headers,rows,name="Payloads"):
 	# Prints a table with the given parameters
 	# Was having borders consisting of non-ascii chars but removed it now this better :3
 	#print(table([["Header1","Header2"],["Row"]],"name").table)
-	Main = []
-	Main.append(headers)
-	for row in rows:Main.append(row)
+	Main = [headers]
+	for row in rows:
+		Main.append(row)
 	t = table(Main,name)
 	#Added this before releasing the tool and too lazy to remove all the things about the table title :"D
 	t.inner_column_border = False
@@ -82,10 +84,7 @@ def check_ver(ver):
 """
 def slow_print(text):
 	for s in text:
-		if sys.version_info[0]==2:
-			sys.stdout.write(s)
-		else:
-			print(s, end='')
+		print(s, end='')
 	time.sleep(0.1)
 """
 
