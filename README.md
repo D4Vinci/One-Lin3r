@@ -89,32 +89,38 @@ exit/quit               Exit the framework
 pip install one-lin3r
 one-lin3r -h
 ```
-
-+ For windows : (After downloading ZIP and upzip it)
-```
-python -m pip install ./One-Lin3r-master
-one-lin3r -h
-```
-+ For Linux :
-```
-git clone https://github.com/D4Vinci/One-Lin3r.git
-apt-get install libncurses5-dev
-pip3 install ./One-Lin3r
-one-lin3r -h
-```
+- Installing it from GitHub:
+  + For windows : (After downloading ZIP and upzip it)
+  ```
+  python -m pip install ./One-Lin3r-master
+  one-lin3r -h
+  ```
+  + For Linux :
+  ```
+  git clone https://github.com/D4Vinci/One-Lin3r.git
+  apt install libncurses5-dev
+  pip3 install ./One-Lin3r
+  one-lin3r -h
+  ```
 
 ## Updating the framework or the database
-- On Linux while outside the directory
+- If you installed it from pip do:
 ```
-cd One-Lin3r && git pull && cd ..
-pip3 install ./One-Lin3r --upgrade
+pip install one-lin3r --upgrade
 ```
-- On Windows if you don't have git installed, redownload the framework zipped!
+- If you installed it from github do:
+  - On Linux while outside the directory
+  ```
+  cd One-Lin3r && git pull && cd ..
+  pip3 install ./One-Lin3r --upgrade
+  ```
+  - On Windows if you don't have git installed, redownload the framework zipped!
 
 > Note: As the liners in are written as python modules, it considered as a part of the framework. So every new liner added the framework version will change.
 
 ## Contact
 - [Twitter](https://twitter.com/D4Vinci1)
+- [Telegram](https://t.me/D4Vinci_0x)
 
 ## Donation
 If my work has been useful for you, feel free to thank me by buying me a coffee or more :)
