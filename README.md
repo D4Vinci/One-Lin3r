@@ -1,33 +1,51 @@
-# One-Lin3r [![n0where best cybersecurity tools](https://img.shields.io/badge/6-This%20year%20top%20100%20tools-red.svg)](https://n0where.net/best-free-open-source-cybersecurity-tools) [![Python 3.5](https://img.shields.io/badge/Python-3.5-yellow.svg)](http://www.python.org/download/) [![Python 2.7](https://img.shields.io/badge/Python-2.7-yellow.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-1.1-red.svg) ![Database](https://img.shields.io/badge/Database-0.4-red.svg)
+# One-Lin3r [![Python](https://img.shields.io/badge/Python-3.x-green.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-2.0-red.svg) ![PyPI](https://img.shields.io/pypi/v/one-lin3r-2.0.svg?style=for-the-badge)
 
-One-Lin3r is simple and light-weight framework inspired by the web-delivery module in Metasploit.
+One-Lin3r is simple modular and light-weight framework gives you all the one-liners that you will need while penetration testing (Windows, Linux, macOS or even BSD systems) or hacking generally with a lot of new features to make all of this fully automated (ex: you won't even need to copy the one-liners).
 
-[![asciicast](https://asciinema.org/a/157020.png)](https://asciinema.org/a/157020?autoplay=1)
+## Screenshots for version 2
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/screenshots/1.png" width="80%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/screenshots/2.png" width="80%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/screenshots/3.png" width="80%"></img>
+<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/screenshots/4.png" width="80%"></img>
 
-It consists of various one-liners that aids in penetration testing operations:
-- **Reverser**: Give it IP & port and it returns a reverse shell liner ready for copy & paste.
-- **Dropper**: Give it an uploaded-backdoor URL and it returns a download-&-execute liner ready for copy & paste.
-- **Other**: Holds liners with general purpose to help in penetration testing (ex: Mimikatz, Powerup, etc...) on the trending OSes (Windows, Linux, and macOS) "More OSes can be added too".
+### It consists of various one-liners types with various functions, some of them are:
+
+| One-liner function | What this function refers to                                                  |
+|:------------------:|-------------------------------------------------------------------------------|
+|    Reverse Shell   | Various methods and commands to give you a reverse shell.                     |
+|       PrivEsc      | Many commands to help in Enumeration and Privilege Escalation                 |
+|     Bind Shell     | Various methods and commands to give you a bind shell.                        |
+|       Dropper      | Many ways to download and execute various payload types with various methods. |
 
 ## Features
-- Search for any one-liner in the database by its full name or partially.
-- You can add your own liners by [following these steps](https://github.com/D4Vinci/One-Lin3r/wiki) to create a ".liner" file.Also you can send it to me directly and it will be added in the framework and credited with your name :smile:.
-- Autocomplete any framework command and recommendations in case of typos (in case you love hacking like movies :laughing:).
-- Command line arguments can be used to give the framework a resource file to load and execute for automation.
+- A lot of liners use with different purposes, **currently are more than 155 liner.**
+- The auto-complete feature that has been implemented in this framework is not the usual one you always see, here are some highlights:
+
+  + It's designed to fix typos in typed commands to the most similar command with just one tab click so `seach` becomes `search` and so on, even if you typed any random word similar to an command in this framework.
+  + For you lazy-ones out there like me, it can predict what liner you are trying to use by typing any part of it. For example if you typed `use capabilities` and clicked tab, it would be replaced with `use linux/bash/list_all_capabilities` and so on. I can see your smile, You are welcome!
+  + If you typed any wrong command then pressed enter, the framework will tell you what is the nearest command to what you have typed which could be the one you really wanted.
+  + Some less impressive things like auto-complete for variables after `set` command, auto-complete for liners after `use` and `info` commands and finally it converts all uppercase to lowercase automatically just-in-case you switched cases by mistake while typing.
+  + Finally, you'll find your normal auto-completion things you were using before, like commands auto-completion and persistent history, etc...
+
+- Automation
+  - You can automatically copy the liner you want to clipboard with command `copy <liner>` instead of using `use <liner>` and then copying it which saves a lot of time, of course, if you merged it with the following features.
+  - As you may noticed, you can use a resource file from command-line arguments before starting the framework itself or send commands directly.
+  - Inside the framework you can use `makerc` command like in Metasploit but this time it only saves the correct important commands.
+  - There are `history` and `resource` commands so you don't need to exit the framework.
+  - You can execute as many commands as you want at the same time by splitting them with semi-colon.
+  + Searching for any liner here is so easy, you can search for a liner by its name, function or even the liner author name.
+
+
+- You can add your own liners by [following these steps](https://github.com/D4Vinci/One-Lin3r/wiki) to create a liner as a python file. After that you can make a Pull request with it then it will be added in the framework and credited with your name of course :smile:.
 - The ability to reload the database if you added any liner without restarting the framework.
-- You can add any platform to the payloads database just by making a folder in payloads folder and creating a ".liner" file there.
+- You can add any platform to the liners database just by making a folder in liners folder and creating a ".liner" file there.
 - More...
 
-The payloads database is not big now because this the first edition but it will get bigger with updates and contributions.
-
-# Screenshots (Not updated)
-<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner1.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner2.png" width="50%"></img>
-<img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner3.png" width="50%"></img><img src="https://github.com/D4Vinci/One-Lin3r/blob/master/One_Lin3r/Core/resources/oneliner4.png" width="50%"></img>
-
+>Note: The liners database is not too big but it will get bigger with updates and contributions.
 
 # Usage
 
-## Commandline arguments
+## Command-line arguments
 ```
 usage: one-lin3r [-h] [-r R] [-x X] [-q]
 
@@ -40,39 +58,48 @@ optional arguments:
 
 ## Framework commands
 ```
-Command             Description
---------            -------------
-help/?              Show this help menu
-list/show           List payloads you can use in the attack.
-search  <Keyword>   Search payloads for a specific one
-use     <payload>   Use an available payload
-info    <payload>   Get information about an available payload
-banner              Display banner
-reload/refresh      Reload the payloads database
-check               Prints the core version and database version then check for them online.
-history             Display command line most important history from the beginning
-save_history        Save command line history to a file
-exit/quit           Exit the framework
+Command                 Description
+--------                -------------
+help/?                  Show this help menu.
+list/show               List all one-liners in the database.
+search   [Keywords..]   Search database for a specific liner by its name, author name or description.
+use       <liner>       Use an available one-liner.
+copy      <liner>       Use an available one-liner and copy it to clipboard automatically.
+info      <liner>       Get information about an available liner.
+set <variable> <value>  Sets a context-specific variable to a value to use while using one-liners.
+variables               Prints all previously specified variables.
+banner                  Display banner.
+reload/refresh          Reload the liners database.
+check                   Prints the core version and checks if you are up-to-date.
+history                 Display command-line most important history from the beginning.
+makerc                  Save command-line history to a file.
+resource    <file>      Run the commands stored in a file
+os         <command>    Execute a system command without closing the framework
+exit/quit               Exit the framework
 `````
 
-## Installing and requirements
-### To make the tool work at its best you must have :
-- Python 3.x or 2.x (preferred 3).
-- Linux (Tested on kali rolling), Windows system, mac osx (tested on 10.11)
-- The requirements mentioned in the next few lines.
+## Prerequisites before installing
+- Python 3.x.
+- Any OS, it should work on all but it's tested on Kali 2018+, Ubuntu 18+, Windows 10, Android with termux and MacOs 10.11
 
-### Installing
+## Installing and running
 
-**+For windows : (After downloading ZIP and upzip it)**
++ Using pip (The best way to install on any OS):
+```
+pip install one-lin3r
+one-lin3r -h
+```
+
++ For windows : (After downloading ZIP and upzip it)
 ```
 python -m pip install ./One-Lin3r-master
 one-lin3r -h
 ```
-**+For Linux :**
++ For Linux :
 ```
 git clone https://github.com/D4Vinci/One-Lin3r.git
 apt-get install libncurses5-dev
-pip install ./One-Lin3r
+pip3 install ./One-Lin3r
 one-lin3r -h
 ```
 
@@ -80,21 +107,28 @@ one-lin3r -h
 - On Linux while outside the directory
 ```
 cd One-Lin3r && git pull && cd ..
-pip install ./One-Lin3r --upgrade
+pip3 install ./One-Lin3r --upgrade
 ```
-- On Windows if you don't have git installed, redownload the framework zipped! 
+- On Windows if you don't have git installed, redownload the framework zipped!
+
+> Note: As the liners in are written as python modules, it considered as a part of the framework. So every new liner added the framework version will change.
 
 ## Contact
 - [Twitter](https://twitter.com/D4Vinci1)
 
 ## Donation
-If this tool has been useful for you, feel free to thank me by buying me a coffee :)
+If my work has been useful for you, feel free to thank me by buying me a coffee or more :)
 
 [![Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/d4vinci)
 
 ## Disclaimer
 One-Lin3r is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.
 
-Copying a code from this tool or using it in another tool is accepted as you mention where you get it from :smile:.
+Copying a code from this tool or using it in another tool is accepted as you mention where you got it from :smile:.
 
 > Pull requests are always welcomed :D
+
+## Credits and references
+- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/)
+- [PowerSploit repo](https://github.com/PowerShellMafia/PowerSploit)
+- [arno0x0x - Windows oneliners to download remote payload and execute arbitrary code](https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/)
