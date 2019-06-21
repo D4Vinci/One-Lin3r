@@ -3,26 +3,42 @@
 import os
 from setuptools import setup, find_packages
 
-with open(os.path.join('One_Lin3r', 'Core', 'resources', 'version.txt')) as f:
+with open(os.path.join( 'one_lin3r', 'core', 'resources', 'version.txt')) as f:
     version = f.read().strip()
 
-setup(name='One-Lin3r',
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setup(name='one-lin3r',
     version=version,
-    description='One-Lin3r is simple and light-weight framework gives you one-liners that aids in pentesting operations',
-    author='Karim Shoair',
+    author='Karim Shoair (D4Vinci)',
+    description='One-Lin3r is simple modular and light-weight framework gives you all the one-liners that you will need while penetration testing or hacking generally with a lot of new features to make all of this fully automated',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     url='https://github.com/D4Vinci/One-Lin3r',
     packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
     include_package_data=True,
     install_requires=[
         'terminaltables',
-        'readline;platform_system!="Windows"',
-        'pyreadline;platform_system=="Windows"',
+        'pyperclip',
+        'prompt_toolkit',
         'win_unicode_console;platform_system=="Windows"',
         'colorama;platform_system=="Windows"',
     ],
+    classifiers=[
+        "Topic :: Security",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Information Technology",
+        "Intended Audience :: System Administrators",
+        "Intended Audience :: Other Audience",
+        "Natural Language :: English",
+        "Programming Language :: Python :: 3 :: Only",
+        "License :: Free for non-commercial use",
+        "Operating System :: OS Independent",
+    ],
     entry_points={
         'console_scripts': [
-            'one-lin3r = One_Lin3r.main:main',
+            'one-lin3r = one_lin3r.main:main',
         ],
     },
 )
