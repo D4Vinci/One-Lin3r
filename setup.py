@@ -12,6 +12,7 @@ with open("README.md", "r") as fh:
 setup(name='one-lin3r',
     version=version,
     author='Karim Shoair (D4Vinci)',
+    author_email="karim.shoair@pm.me",
     description='One-Lin3r is simple modular and light-weight framework gives you all the one-liners that you will need while penetration testing (Windows, Linux, macOS or even BSD systems) or hacking generally with a lot of new features to make all of this fully automated (ex: you won\'t even need to copy the one-liners).',
     long_description=long_description,
     long_description_content_type="text/markdown",

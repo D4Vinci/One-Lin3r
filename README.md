@@ -1,4 +1,4 @@
-# One-Lin3r [![Python](https://img.shields.io/badge/Python-3.x-green.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-2.0-red.svg) ![PyPI](https://img.shields.io/pypi/v/one-lin3r-2.0.svg?style=for-the-badge)
+# One-Lin3r [![Python](https://img.shields.io/badge/Python-3.x-green.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-2.0-red.svg) ![PyPI](https://img.shields.io/pypi/v/one-lin3r.svg?style=for-the-badge)
 
 One-Lin3r is simple modular and light-weight framework gives you all the one-liners that you will need while penetration testing (Windows, Linux, macOS or even BSD systems) or hacking generally with a lot of new features to make all of this fully automated (ex: you won't even need to copy the one-liners).
 
@@ -116,7 +116,7 @@ pip install one-lin3r --upgrade
   ```
   - On Windows if you don't have git installed, redownload the framework zipped!
 
-> Note: As the liners in are written as python modules, it considered as a part of the framework. So every new liner added the framework version will change.
+> Note: As the liners are written as python modules, it considered as a part of the framework. So every new liner added to the framework, its version will get updated.
 
 ## Contact
 - [Twitter](https://twitter.com/D4Vinci1)
