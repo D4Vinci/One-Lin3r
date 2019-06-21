@@ -1,0 +1,10 @@
+#Written by: Karim shoair - D4Vinci ( One-Lin3r )
+#####
+# This file shows how an liner should be written to be used in One-Lin3r
+#####
+
+class info:
+    author      = "Here you put your name of course"
+    description = "A brief description of how the liner works without explaining a lot like what I did."
+    function    = "The main functions this liner could do, each function described in one word or two like (reverse shell, bind shell, PrivEsc) separated with ',' of course if it's more than one."
+    liner     = "The liner itself with putting the variables (or the data to change) in uppercase so the user can set it from the framework."
