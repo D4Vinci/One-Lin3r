@@ -1,7 +1,0 @@
-[Info]
-Author      = Karim shoair (D4Vinci)
-Description = Using windows's control panel to load a dll file!
-
-[Payload]
-Type     = Loader
-Payload  = control.exe {your_dll_file}

