@@ -1,4 +1,4 @@
-# One-Lin3r ![PyPI](https://img.shields.io/pypi/v/one-lin3r.svg) [![Python](https://img.shields.io/badge/Python-3.x-green.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-2.0-red.svg)
+# One-Lin3r ![PyPI](https://img.shields.io/pypi/v/one-lin3r.svg) [![Python](https://img.shields.io/badge/Python-3.x-green.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-2.1-red.svg)
 
 One-Lin3r is simple modular and light-weight framework gives you all the one-liners that you will need while penetration testing (Windows, Linux, macOS or even BSD systems) or hacking generally with a lot of new features to make all of this fully automated (ex: you won't even need to copy the one-liners).
 
@@ -33,7 +33,7 @@ One-Lin3r is simple modular and light-weight framework gives you all the one-lin
   - Inside the framework you can use `makerc` command like in Metasploit but this time it only saves the correct important commands.
   - There are `history` and `resource` commands so you don't need to exit the framework.
   - You can execute as many commands as you want at the same time by splitting them with semi-colon.
-  + Searching for any liner here is so easy, you can search for a liner by its name, function or even the liner author name.
+  + Searching for any liner here is so easy and accurate, you can search for a liner by its name, function, description, author who added the liner to the framework or even the liner itself.
 
 
 - You can add your own liners by [following these steps](https://github.com/D4Vinci/One-Lin3r/wiki) to create a liner as a python file. After that you can make a Pull request with it then it will be added in the framework and credited with your name of course :smile:.
@@ -58,29 +58,29 @@ optional arguments:
 
 ## Framework commands
 ```
-Command                 Description
---------                -------------
-help/?                  Show this help menu.
-list/show               List all one-liners in the database.
-search   [Keywords..]   Search database for a specific liner by its name, author name or description.
-use       <liner>       Use an available one-liner.
-copy      <liner>       Use an available one-liner and copy it to clipboard automatically.
-info      <liner>       Get information about an available liner.
-set <variable> <value>  Sets a context-specific variable to a value to use while using one-liners.
-variables               Prints all previously specified variables.
-banner                  Display banner.
-reload/refresh          Reload the liners database.
-check                   Prints the core version and checks if you are up-to-date.
-history                 Display command-line most important history from the beginning.
-makerc                  Save command-line history to a file.
-resource    <file>      Run the commands stored in a file
-os         <command>    Execute a system command without closing the framework
-exit/quit               Exit the framework
+Command                     Description
+--------                    -------------
+help/?                      Show this help menu.
+list/show                   List all one-liners in the database.
+search  (-h) [Keywords..]   Search database for a specific liner by its name, author name or function.
+use         <liner>         Use an available one-liner.
+copy        <liner>         Use an available one-liner and copy it to clipboard automatically.
+info        <liner>         Get information about an available liner.
+set <variable> <value>      Sets a context-specific variable to a value to use while using one-liners.
+variables                   Prints all previously specified variables.
+banner                      Display banner.
+reload/refresh              Reload the liners database.
+check                       Prints the core version and checks if you are up-to-date.
+history                     Display command-line most important history from the beginning.
+makerc                      Save command-line history to a file.
+resource     <file>         Run the commands stored in a file
+os          <command>       Execute a system command without closing the framework
+exit/quit                   Exit the framework
 `````
 
 ## Prerequisites before installing
 - Python 3.x.
-- Any OS, it should work on all but it's tested on Kali 2018+, Ubuntu 18+, Windows 10, Android with termux and MacOs 10.11
+- Any OS, it should work on all but it's tested on Kali 2018+, Ubuntu 18+, Manjaro, Black Arch, Windows 10, Android Termux and Mac-OS 10.11
 
 ## Installing and running
 
@@ -89,17 +89,27 @@ exit/quit               Exit the framework
 pip install one-lin3r
 one-lin3r -h
 ```
++ Using pacman on Black Arch or any arch-based with black Arch repos:
+```
+sudo pacman -S one-lin3r
+```
 - Installing it from GitHub:
-  + For windows : (After downloading ZIP and upzip it)
+  + For windows on cmd with administrator rights : (After downloading ZIP and unzip it)
   ```
-  python -m pip install ./One-Lin3r-master
+  python -m pip install ./One-Lin3r-master --user
   one-lin3r -h
   ```
-  + For Linux :
+  + For Linux Debian-based distros. (Ex: Kali, Ubuntu..):
   ```
   git clone https://github.com/D4Vinci/One-Lin3r.git
-  apt install libncurses5-dev
-  pip3 install ./One-Lin3r
+  sudo apt install libncurses5-dev
+  sudo pip3 install ./One-Lin3r --user
+  one-lin3r -h
+  ```
+  + For the rest Linux distros.:
+  ```
+  git clone https://github.com/D4Vinci/One-Lin3r.git
+  sudo pip3 install ./One-Lin3r --user
   one-lin3r -h
   ```
 
@@ -108,15 +118,15 @@ one-lin3r -h
 ```
 pip install one-lin3r --upgrade
 ```
-- If you installed it from github do:
+- If you installed it from GitHub do:
   - On Linux while outside the directory
   ```
   cd One-Lin3r && git pull && cd ..
   pip3 install ./One-Lin3r --upgrade
   ```
-  - On Windows if you don't have git installed, redownload the framework zipped!
+  - On Windows if you don't have git installed, re-download the framework zipped!
 
-> Note: As the liners are written as python modules, it considered as a part of the framework. So every new liner added to the framework, its version will get updated.
+> Note: The liners are written as python modules, so it's considered as a part of the framework. So every new liner added to the framework, its version will get updated.
 
 ## Contact
 - [Twitter](https://twitter.com/D4Vinci1)

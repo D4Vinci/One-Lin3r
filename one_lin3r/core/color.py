@@ -7,7 +7,7 @@ G, Y, B, R, W, M, C, end, Bold, underline = '\033[32m', '\033[93m', '\033[94m', 
 if os.name=="nt":
 	try:
 		import win_unicode_console , colorama
-		win_unicode_console.enable()
+		# win_unicode_console.enable()  # Removed due to some unicode confilct on some windows devices
 		colorama.init()
 	except:
 		G = Y = B = R = W = M = C = end = Bold = underline = ''

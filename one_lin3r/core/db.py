@@ -15,12 +15,11 @@ def index_liners():
         for name in [f for f in files if f.endswith(".py")]:
             liners.append( os.path.join(path, name) )
     liners = [ x for x in liners if ("__" not in x and x.endswith('.py')) ]
-    liners = utils.my_map( lambda x:x.replace(".py","").replace("\\","/"), liners)
     liners = utils.my_map( lambda x:x.replace(pth,""),liners)
+    liners = utils.my_map( lambda x:x.replace(".py","").replace("\\","/"), liners)
     return liners
 
 def grab(liner):
-    # Return info from liner
-    liner_exec  = importlib.import_module( utils.pythonize( "/".join( [".core/liners",*liner.split("/")] )),package='one_lin3r' )
+    liner_exec  = importlib.import_module( ".core.liners."+utils.pythonize(liner), package='one_lin3r' )
     importlib.reload(liner_exec)
     return getattr(liner_exec, 'info')

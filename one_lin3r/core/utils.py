@@ -18,7 +18,7 @@ except ImportError:
 core_dir = pkg_resources.resource_filename('one_lin3r', 'core')
 
 def get_corefilepath(*args):
-    return os.path.join(core_dir, *args)
+	return os.path.join(core_dir, *args)
 
 current_directory = os.getcwd()
 
@@ -100,7 +100,7 @@ def encoder(text):
 
 def check_version():
 	#check for database version online
-	u = "https://raw.githubusercontent.com/D4Vinci/One-Lin3r/master/core/resources/version.txt"
+	u = "https://raw.githubusercontent.com/D4Vinci/One-Lin3r/master/one_lin3r/core/resources/version.txt"
 	try:
 		res = urlopen(u).read().decode('utf-8').strip()
 		return res
@@ -184,6 +184,10 @@ class MyCompleter(Completer):
 
 session = PromptSession(history=FileHistory(os.path.expanduser("~/.command_history")))
 def getinput_autocompleted(name, commands, variables, liners):
-	text = session.prompt(ANSI(name), completer=MyCompleter(commands, variables, liners), complete_while_typing=True, complete_in_thread=True
-	,complete_style=CompleteStyle.READLINE_LIKE)
+	text = session.prompt( ANSI(name),
+							completer=MyCompleter(commands, variables, liners),
+							complete_while_typing=True,
+							complete_in_thread=True,
+							complete_style=CompleteStyle.READLINE_LIKE
+						)
 	return text
