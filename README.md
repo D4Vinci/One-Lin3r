@@ -18,7 +18,7 @@ One-Lin3r is simple modular and light-weight framework gives you all the one-lin
 |       Dropper      | Many ways to download and execute various payload types with various methods. |
 
 ## Features
-- A lot of liners use with different purposes, **currently are more than 155 liner.**
+- A lot of liners use with different purposes, **currently are more than 176 liner.**
 - The auto-complete feature that has been implemented in this framework is not the usual one you always see, here are some highlights:
 
   + It's designed to fix typos in typed commands to the most similar command with just one tab click so `seach` becomes `search` and so on, even if you typed any random word similar to an command in this framework.
