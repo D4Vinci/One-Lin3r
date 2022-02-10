@@ -1,12 +1,18 @@
 # One-Lin3r ![PyPI](https://img.shields.io/pypi/v/one-lin3r.svg) [![Python](https://img.shields.io/badge/Python-3.x-green.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-2.1-red.svg)
 
-One-Lin3r is simple modular and light-weight framework gives you all the one-liners that you will need while penetration testing (Windows, Linux, macOS or even BSD systems) or hacking generally with a lot of new features to make all of this fully automated (ex: you won't even need to copy the one-liners).
+ One-Lin3r is simple modular and light-weight framework thats gives you all the one-liners that you will need while penetration testing *(Windows, Linux, macOS or even BSD systems)* or hacking generally with a lot of new features to make all of this fully automated *(ex: you won't even need to copy the one-liners)*.
 
-## Screenshots for version 2
-<img src="screenshots/1.png" width="80%"></img>
-<img src="screenshots/2.png" width="80%"></img>
-<img src="screenshots/3.png" width="80%"></img>
-<img src="screenshots/4.png" width="80%"></img>
+<details closed>
+  <summary> <b>Most Recent Screenshots</b> </summary>
+  <div align = 'center'>
+    <img src="screenshots/1.png" width="80%"></img>
+    <img src="screenshots/2.png" width="80%"></img>
+    <img src="screenshots/3.png" width="80%"></img>
+    <img src="screenshots/4.png" width="80%"></img>
+  </div>
+</details>
+
+<br/>
 
 ### It consists of various one-liners types with various functions, some of them are:
 
