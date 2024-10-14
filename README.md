@@ -1,4 +1,4 @@
-# One-Lin3r ![PyPI](https://img.shields.io/pypi/v/one-lin3r.svg) [![Python](https://img.shields.io/badge/Python-3.x-green.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-2.1-red.svg)
+# One-Lin3r ![PyPI](https://img.shields.io/pypi/v/one-lin3r.svg) [![Python](https://img.shields.io/badge/Python-3.x-green.svg)](http://www.python.org/download/) ![Core](https://img.shields.io/badge/Core-2.1-red.svg) [![Downloads](https://static.pepy.tech/badge/one-lin3r)](https://pepy.tech/project/one-lin3r)
 
 One-Lin3r is simple modular and light-weight framework gives you all the one-liners that you will need while penetration testing (Windows, Linux, macOS or even BSD systems) or hacking generally with a lot of new features to make all of this fully automated (ex: you won't even need to copy the one-liners).
 
