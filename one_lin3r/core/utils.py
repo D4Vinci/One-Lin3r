@@ -8,14 +8,15 @@ from prompt_toolkit.completion import WordCompleter
 from prompt_toolkit.completion import Completer, Completion
 from prompt_toolkit import PromptSession
 from prompt_toolkit.history import FileHistory
-import sys, os, time, pkg_resources
+import sys, os, time
 
 try:
 	from urllib.request import urlopen
 except ImportError:
 	from urllib import urlopen
 
-core_dir = pkg_resources.resource_filename('one_lin3r', 'core')
+# Avoid runtime dependency on pkg_resources/setuptools.
+core_dir = os.path.dirname(os.path.abspath(__file__))
 
 def get_corefilepath(*args):
 	return os.path.join(core_dir, *args)

@@ -1,0 +1,30 @@
+[project]
+name = "one-lin3r"
+version = "0.1.0"
+description = "One-Lin3r CLI and MCP server for offensive security one-liners."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "setuptools>=82.0.1",
+    'terminaltables',
+    'pyperclip',
+    'prompt_toolkit',
+    'mcp[cli]',
+    'win_unicode_console;platform_system=="Windows"',
+    'colorama;platform_system=="Windows"',
+]
+
+[project.scripts]
+one-lin3r = "one_lin3r.main:main"
+
+[build-system]
+requires = ["setuptools>=82.0.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["one_lin3r*"]
+exclude = ["screenshots*"]
